@@ -1,69 +1,106 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>HBD love </title>	    
-        <link type="text/css" rel="stylesheet" href="./file/default.css">
-		<script type="text/javascript" src="./file/jquery.min.js"></script>
-		<script type="text/javascript" src="./file/jscex.min.js"></script>
-		<script type="text/javascript" src="./file/jscex-parser.js"></script>
-		<script type="text/javascript" src="./file/jscex-jit.js"></script>
-		<script type="text/javascript" src="./file/jscex-builderbase.min.js"></script>
-		<script type="text/javascript" src="./file/jscex-async.min.js"></script>
-		<script type="text/javascript" src="./file/jscex-async-powerpack.min.js"></script>
-		<script type="text/javascript" src="./file/functions.js" charset="utf-8"></script>
-		<script type="text/javascript" src="./file/love.js" charset="utf-8"></script>
-        <script>
-            function playAudio() {
-                var audio = document.getElementById("myAudio");
-                audio.play();
-            }
-        </script>
-	    <style type="text/css">
-        </style>
-</head>
-    <body>
-        <div id="main">
-            <div id="error">，<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>(<a href="http://firefox.com.cn/download/">Firefox</a>)</div>
-            <audio autoplay="autoplay" height="100" width="100" id = "myAudio">
-                    <source src="aud.mp3" type="audio/mp3" />
-                    <embed height="100" width="100" src="aud.mp3" />
-            </audio>
-            <div id="wrap">
-                <div id="text">
-                    <div id="code">
-                      <span class="say"> Happiest Birthday  </span><br>
-                      <span class="say">My Beautiful🫀 </span><br>             
-                      <span class="say">I'LL GIVE YOU</span><br>
-                      <span class="say">ALL THE LOVE🥰</span><br>
-                      <span class="say">THAT ONE CAN💕</span><br>
-                      <span class="say">Your @techeonn🫶! </span><br>
-                      <span class="say"><span class="space"></span></span> </font>
-                          <br />
-                          <br />
-                      </p>
-                    </div>
-                  </div>
-
-                  <div id = "message-box"></div>
-                <div id="clock-box">
-                    <span class="STYLE1"></span><font color="#33CC00"></font>
-<span class="STYLE1"></span>
-                  <div id="clock"></div>
-              </div>
-                <canvas id="canvas" width="1100" height="680"></canvas>
-            </div>
-            
-        </div>
-    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>HAPPY FRIENDSHIP DAY</title>
+    <link type="text/css" rel="stylesheet" href="./file/default.css">
+    <script type="text/javascript" src="./file/jquery.min.js"></script>
+    <script type="text/javascript" src="./file/jscex.min.js"></script>
+    <script type="text/javascript" src="./file/jscex-parser.js"></script>
+    <script type="text/javascript" src="./file/jscex-jit.js"></script>
+    <script type="text/javascript" src="./file/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="./file/jscex-async.min.js"></script>
+    <script type="text/javascript" src="./file/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="./file/functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./file/love.js" charset="utf-8"></script>
     <script>
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
     </script>
+    <style type="text/css">
+        #clock-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 48px; /* Adjust this size as needed */
+        }
+
+        .time-part {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        .time-value {
+            font-size: 48px; /* Larger font size */
+        }
+
+        .time-label {
+            font-size: 24px; /* Smaller font size */
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="error">
+            ，<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>(<a href="http://firefox.com.cn/download/">Firefox</a>)
+        </div>
+        <audio autoplay="autoplay" height="100" width="100" id="myAudio">
+            <source src="aud.mp3" type="audio/mp3" />
+            <embed height="100" width="100" src="aud.mp3" />
+        </audio>
+        <div id="wrap">
+            <div id="text">
+                <div id="code">
+                    <span class="say">Happy Friendship Day Potti</span><br>
+                    <span class="say">My Beautiful💕</span><br>             
+                    <span class="say">You Are My First Ever Friend</span><br>
+                    <span class="say">AND I LOVE YOU🥰</span><br>
+                    <span class="say">RUCHI💕</span><br>
+                    <span class="say">You're My World</span><br>
+                    <span class="say">My Everything</span><br>
+                    <span class="say">🫶🏻🫰🏻</span><br>
+                    <span class="say"><span class="space"></span></span>
+                    <br />
+                    <br />
+                </div>
+            </div>
+
+            <div id="message-box"></div>
+            <div id="clock-box">
+                <div class="time-part">
+                    <div id="days" class="time-value"></div>
+                    <div class="time-label"></div>
+                </div>
+                <div class="time-part">
+                    <div id="hours" class="time-value"></div>
+                    <div class="time-label"></div>
+                </div>
+                <div class="time-part">
+                    <div id="minutes" class="time-value"></div>
+                    <div class="time-label"></div>
+                </div>
+                <div class="time-part">
+                    <div id="seconds" class="time-value"></div>
+                    <div class="time-label"></div>
+                </div>
+            </div>
+            <canvas id="canvas" width="1100" height="680"></canvas>
+        </div>
+    </div>
 
     <script>
     (function(){
         var canvas = $('#canvas');
-		
+        
         if (!canvas[0].getContext) {
             $("#error").show();
-            return false;        }
+            return false;
+        }
 
         var width = canvas.width();
         var height = canvas.height();        
@@ -91,7 +128,7 @@
                     [546, 357, 608, 252, 678, 221, 6, 100, [
                         [590, 293, 646, 277, 648, 271, 2, 80]
                     ]]
-                ]] 
+                ]]
             ],
             bloom: {
                 num: 700,
@@ -128,8 +165,6 @@
             y = e.pageY - offset.top;
             canvas.toggleClass('hand', seed.hover(x, y));
         });
-        
-        
 
         var seedAnimate = eval(Jscex.compile("async", function () {
             seed.draw();
@@ -149,14 +184,14 @@
 
         var growAnimate = eval(Jscex.compile("async", function () {
             do {
-    	        tree.grow();
+                tree.grow();
                 $await(Jscex.Async.sleep(10));
             } while (tree.canGrow());
         }));
 
         var flowAnimate = eval(Jscex.compile("async", function () {
             do {
-    	        tree.flower(2);
+                tree.flower(2);
                 $await(Jscex.Async.sleep(10));
             } while (tree.canFlower());
         }));
@@ -187,14 +222,14 @@
         }));
 
         var textAnimate = eval(Jscex.compile("async", function () {
-		    var together = new Date();
-		    together.setFullYear(2005, 25, 12); 			
-		    together.setHours(20);						
-		    together.setMinutes(0);					
-		    together.setSeconds(0);					
-		    together.setMilliseconds(2);				
+            var together = new Date();
+            together.setFullYear(2020, 06, 07); 			
+            together.setHours(21);						
+            together.setMinutes(30);					
+            together.setSeconds(0);					
+            together.setMilliseconds(2);				
 
-		    $("#code").show().typewriter();
+            $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
             while (true) {
                 timeElapse(together);
@@ -215,4 +250,6 @@
 
         runAsync().start();
     })();
-    </script></body></html>
+    </script>
+</body>
+</html>
